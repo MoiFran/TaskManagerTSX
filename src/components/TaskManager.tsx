@@ -53,7 +53,7 @@ const TaskManager = (): JSX.Element => {
     reset();
   };
 
-  const stratTask = (id: string) => {
+  const startTask = (id: string) => {
     let todoTaskList = JSON.parse(
       localStorage.getItem("TodoTaskList") ?? "[]"
     ) as TaskData[];
@@ -140,7 +140,7 @@ const TaskManager = (): JSX.Element => {
       <div className="task-container">
         <TodoTaskList
           todoTask={todoTask}
-          stratTask={stratTask}
+          startTask={startTask}
           deleteTask={deleteTask}
         />
         <InProgressTaskList

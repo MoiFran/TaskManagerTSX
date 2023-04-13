@@ -10,7 +10,7 @@ interface TaskData {
 
 interface TodoTaskListProps {
   todoTask: TaskData[];
-  startTask: (task: TaskData) => void;
+  startTask: (id: TaskData) => void;
   deleteTask: (id: string) => void;
 }
 
