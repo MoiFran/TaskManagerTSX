@@ -5,6 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 import TodoTaskList from "./TodoTaskList";
 import InProgressTaskList from "./InProgressTaskList";
 import DoneTaskList from "./DoneTaskList";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 interface TaskData {
   id: string;
